@@ -1,0 +1,7 @@
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Web.IBLL\bin\Debug\ESTM.Web.IBLL.dll
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Web.IBLL\bin\Debug\ESTM.Web.IBLL.pdb
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Web.IBLL\obj\Debug\ESTM.Web.IBLL.dll
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Web.IBLL\obj\Debug\ESTM.Web.IBLL.pdb
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Web.IBLL\obj\Debug\ESTM.Web.IBLL.csprojResolveAssemblyReference.cache
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Web.IBLL\bin\Debug\ESTM.Common.DtoModel.dll
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Web.IBLL\bin\Debug\ESTM.Common.DtoModel.pdb

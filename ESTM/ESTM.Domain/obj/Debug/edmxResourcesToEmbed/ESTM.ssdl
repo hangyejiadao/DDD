@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ESTM.Store" Provider="Oracle.ManagedDataAccess.Client" ProviderManifestToken="11.2" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="TB_DEPARTMENT">
+    <Key>
+      <PropertyRef Name="DEPARTMENT_ID" />
+    </Key>
+    <Property Name="DEPARTMENT_ID" Type="varchar2" MaxLength="50" Nullable="false" />
+    <Property Name="DEPARTMENT_NAME" Type="varchar2" MaxLength="50" />
+    <Property Name="PARENT_ID" Type="varchar2" MaxLength="50" />
+    <Property Name="DEPARTMENT_LEVEL" Type="varchar2" MaxLength="10" />
+    <Property Name="STATUS" Type="varchar2" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="TB_MENU">
+    <Key>
+      <PropertyRef Name="MENU_ID" />
+    </Key>
+    <Property Name="MENU_ID" Type="varchar2" MaxLength="50" Nullable="false" />
+    <Property Name="MENU_NAME" Type="varchar2" MaxLength="50" />
+    <Property Name="MENU_URL" Type="varchar2" MaxLength="50" />
+    <Property Name="PARENT_ID" Type="varchar2" MaxLength="50" />
+    <Property Name="MENU_LEVEL" Type="varchar2" MaxLength="10" />
+    <Property Name="SORT_ORDER" Type="varchar2" MaxLength="50" />
+    <Property Name="STATUS" Type="varchar2" MaxLength="10" />
+    <Property Name="REMARK" Type="varchar2" MaxLength="1000" />
+    <Property Name="MENU_ICO" Type="varchar2" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TB_MENUROLE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="varchar2" MaxLength="50" Nullable="false" />
+    <Property Name="ROLE_ID" Type="varchar2" MaxLength="50" />
+    <Property Name="MENU_ID" Type="varchar2" MaxLength="50" />
+    <Property Name="ROLE_TYPE" Type="varchar2" MaxLength="10" />
+    <Property Name="BUTTON_ID" Type="varchar2" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TB_ROLE">
+    <Key>
+      <PropertyRef Name="ROLE_ID" />
+    </Key>
+    <Property Name="ROLE_ID" Type="varchar2" MaxLength="50" Nullable="false" />
+    <Property Name="ROLE_NAME" Type="varchar2" MaxLength="50" />
+    <Property Name="DESCRIPTION" Type="varchar2" MaxLength="500" />
+    <Property Name="CREATETIME" Type="date" />
+    <Property Name="MODIFYTIME" Type="date" />
+    <Property Name="ROLE_DEFAULTURL" Type="varchar2" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="TB_USERROLE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="varchar2" MaxLength="50" Nullable="false" />
+    <Property Name="ROLE_ID" Type="varchar2" MaxLength="50" />
+    <Property Name="USER_ID" Type="varchar2" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TB_USERS">
+    <Key>
+      <PropertyRef Name="USER_ID" />
+    </Key>
+    <Property Name="USER_ID" Type="varchar2" MaxLength="50" Nullable="false" />
+    <Property Name="USER_NAME" Type="varchar2" MaxLength="50" />
+    <Property Name="USER_PASSWORD" Type="varchar2" MaxLength="50" />
+    <Property Name="FULLNAME" Type="varchar2" MaxLength="50" />
+    <Property Name="DEPARTMENT_ID" Type="varchar2" MaxLength="50" />
+    <Property Name="STATUS" Type="varchar2" MaxLength="10" />
+    <Property Name="CREATETIME" Type="date" />
+    <Property Name="MODIFYTIME" Type="date" />
+    <Property Name="REMARK" Type="varchar2" MaxLength="1000" />
+  </EntityType>
+  <Association Name="FK_TB_MENUR_REFERENCE_TB_MENU">
+    <End Role="TB_MENU" Type="Self.TB_MENU" Multiplicity="0..1" />
+    <End Role="TB_MENUROLE" Type="Self.TB_MENUROLE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_MENU">
+        <PropertyRef Name="MENU_ID" />
+      </Principal>
+      <Dependent Role="TB_MENUROLE">
+        <PropertyRef Name="MENU_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_MENUR_REFERENCE_TB_ROLE">
+    <End Role="TB_ROLE" Type="Self.TB_ROLE" Multiplicity="0..1" />
+    <End Role="TB_MENUROLE" Type="Self.TB_MENUROLE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_ROLE">
+        <PropertyRef Name="ROLE_ID" />
+      </Principal>
+      <Dependent Role="TB_MENUROLE">
+        <PropertyRef Name="ROLE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_USERR_REFERENCE_TB_ROLE">
+    <End Role="TB_ROLE" Type="Self.TB_ROLE" Multiplicity="0..1" />
+    <End Role="TB_USERROLE" Type="Self.TB_USERROLE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_ROLE">
+        <PropertyRef Name="ROLE_ID" />
+      </Principal>
+      <Dependent Role="TB_USERROLE">
+        <PropertyRef Name="ROLE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_USERR_REFERENCE_TB_USERS">
+    <End Role="TB_USERS" Type="Self.TB_USERS" Multiplicity="0..1" />
+    <End Role="TB_USERROLE" Type="Self.TB_USERROLE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USERS">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_USERROLE">
+        <PropertyRef Name="USER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_USERS_REFERENCE_TB_DEPAR">
+    <End Role="TB_DEPARTMENT" Type="Self.TB_DEPARTMENT" Multiplicity="0..1" />
+    <End Role="TB_USERS" Type="Self.TB_USERS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_DEPARTMENT">
+        <PropertyRef Name="DEPARTMENT_ID" />
+      </Principal>
+      <Dependent Role="TB_USERS">
+        <PropertyRef Name="DEPARTMENT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ESTMStoreContainer">
+    <EntitySet Name="TB_DEPARTMENT" EntityType="Self.TB_DEPARTMENT" Schema="MES" store:Type="Tables" />
+    <EntitySet Name="TB_MENU" EntityType="Self.TB_MENU" Schema="MES" store:Type="Tables" />
+    <EntitySet Name="TB_MENUROLE" EntityType="Self.TB_MENUROLE" Schema="MES" store:Type="Tables" />
+    <EntitySet Name="TB_ROLE" EntityType="Self.TB_ROLE" Schema="MES" store:Type="Tables" />
+    <EntitySet Name="TB_USERROLE" EntityType="Self.TB_USERROLE" Schema="MES" store:Type="Tables" />
+    <EntitySet Name="TB_USERS" EntityType="Self.TB_USERS" Schema="MES" store:Type="Tables" />
+    <AssociationSet Name="FK_TB_MENUR_REFERENCE_TB_MENU" Association="Self.FK_TB_MENUR_REFERENCE_TB_MENU">
+      <End Role="TB_MENU" EntitySet="TB_MENU" />
+      <End Role="TB_MENUROLE" EntitySet="TB_MENUROLE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_MENUR_REFERENCE_TB_ROLE" Association="Self.FK_TB_MENUR_REFERENCE_TB_ROLE">
+      <End Role="TB_ROLE" EntitySet="TB_ROLE" />
+      <End Role="TB_MENUROLE" EntitySet="TB_MENUROLE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_USERR_REFERENCE_TB_ROLE" Association="Self.FK_TB_USERR_REFERENCE_TB_ROLE">
+      <End Role="TB_ROLE" EntitySet="TB_ROLE" />
+      <End Role="TB_USERROLE" EntitySet="TB_USERROLE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_USERR_REFERENCE_TB_USERS" Association="Self.FK_TB_USERR_REFERENCE_TB_USERS">
+      <End Role="TB_USERS" EntitySet="TB_USERS" />
+      <End Role="TB_USERROLE" EntitySet="TB_USERROLE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_USERS_REFERENCE_TB_DEPAR" Association="Self.FK_TB_USERS_REFERENCE_TB_DEPAR">
+      <End Role="TB_DEPARTMENT" EntitySet="TB_DEPARTMENT" />
+      <End Role="TB_USERS" EntitySet="TB_USERS" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,6 @@
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Web\bin\ESTM.Web.BLL.dll.config
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Web\bin\ESTM.Web.BLL.dll
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Web\bin\ESTM.Web.BLL.pdb
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Web.BLL\obj\Debug\ESTM.Web.BLL.csprojResolveAssemblyReference.cache
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Web.BLL\obj\Debug\ESTM.Web.BLL.dll
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Web.BLL\obj\Debug\ESTM.Web.BLL.pdb

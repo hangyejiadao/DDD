@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs" Space="C-S">
+  <Alias Key="Model" Value="ESTM" />
+  <Alias Key="Target" Value="ESTM.Store" />
+  <EntityContainerMapping CdmEntityContainer="ESTMContainer" StorageEntityContainer="ESTMStoreContainer">
+    <EntitySetMapping Name="TB_DEPARTMENT">
+      <EntityTypeMapping TypeName="ESTM.TB_DEPARTMENT">
+        <MappingFragment StoreEntitySet="TB_DEPARTMENT">
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="DEPARTMENT_LEVEL" ColumnName="DEPARTMENT_LEVEL" />
+          <ScalarProperty Name="PARENT_ID" ColumnName="PARENT_ID" />
+          <ScalarProperty Name="DEPARTMENT_NAME" ColumnName="DEPARTMENT_NAME" />
+          <ScalarProperty Name="DEPARTMENT_ID" ColumnName="DEPARTMENT_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_MENU">
+      <EntityTypeMapping TypeName="ESTM.TB_MENU">
+        <MappingFragment StoreEntitySet="TB_MENU">
+          <ScalarProperty Name="MENU_ICO" ColumnName="MENU_ICO" />
+          <ScalarProperty Name="REMARK" ColumnName="REMARK" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="SORT_ORDER" ColumnName="SORT_ORDER" />
+          <ScalarProperty Name="MENU_LEVEL" ColumnName="MENU_LEVEL" />
+          <ScalarProperty Name="PARENT_ID" ColumnName="PARENT_ID" />
+          <ScalarProperty Name="MENU_URL" ColumnName="MENU_URL" />
+          <ScalarProperty Name="MENU_NAME" ColumnName="MENU_NAME" />
+          <ScalarProperty Name="MENU_ID" ColumnName="MENU_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_MENUROLE">
+      <EntityTypeMapping TypeName="ESTM.TB_MENUROLE">
+        <MappingFragment StoreEntitySet="TB_MENUROLE">
+          <ScalarProperty Name="BUTTON_ID" ColumnName="BUTTON_ID" />
+          <ScalarProperty Name="ROLE_TYPE" ColumnName="ROLE_TYPE" />
+          <ScalarProperty Name="MENU_ID" ColumnName="MENU_ID" />
+          <ScalarProperty Name="ROLE_ID" ColumnName="ROLE_ID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_ROLE">
+      <EntityTypeMapping TypeName="ESTM.TB_ROLE">
+        <MappingFragment StoreEntitySet="TB_ROLE">
+          <ScalarProperty Name="ROLE_DEFAULTURL" ColumnName="ROLE_DEFAULTURL" />
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="ROLE_NAME" ColumnName="ROLE_NAME" />
+          <ScalarProperty Name="ROLE_ID" ColumnName="ROLE_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_USERROLE">
+      <EntityTypeMapping TypeName="ESTM.TB_USERROLE">
+        <MappingFragment StoreEntitySet="TB_USERROLE">
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="ROLE_ID" ColumnName="ROLE_ID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_USERS">
+      <EntityTypeMapping TypeName="ESTM.TB_USERS">
+        <MappingFragment StoreEntitySet="TB_USERS">
+          <ScalarProperty Name="REMARK" ColumnName="REMARK" />
+          <ScalarProperty Name="MODIFYTIME" ColumnName="MODIFYTIME" />
+          <ScalarProperty Name="CREATETIME" ColumnName="CREATETIME" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="DEPARTMENT_ID" ColumnName="DEPARTMENT_ID" />
+          <ScalarProperty Name="FULLNAME" ColumnName="FULLNAME" />
+          <ScalarProperty Name="USER_PASSWORD" ColumnName="USER_PASSWORD" />
+          <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,8 @@
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Domain\bin\Debug\ESTM.Domain.dll.config
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Domain\bin\Debug\ESTM.Domain.dll
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Domain\bin\Debug\ESTM.Domain.pdb
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Domain\bin\Debug\EntityFramework.dll
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Domain\bin\Debug\EntityFramework.xml
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Domain\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Domain\obj\Debug\ESTM.Domain.dll
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Domain\obj\Debug\ESTM.Domain.pdb

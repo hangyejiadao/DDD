@@ -1,0 +1,4 @@
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Common.DtoModel\bin\Debug\ESTM.Common.DtoModel.dll
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Common.DtoModel\bin\Debug\ESTM.Common.DtoModel.pdb
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Common.DtoModel\obj\Debug\ESTM.Common.DtoModel.dll
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Common.DtoModel\obj\Debug\ESTM.Common.DtoModel.pdb

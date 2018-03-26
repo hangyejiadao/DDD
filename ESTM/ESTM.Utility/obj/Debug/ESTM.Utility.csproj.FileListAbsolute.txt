@@ -1,0 +1,10 @@
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Utility\bin\Debug\ESTM.Utility.dll
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Utility\bin\Debug\ESTM.Utility.pdb
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Utility\obj\Debug\ESTM.Utility.dll
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Utility\obj\Debug\ESTM.Utility.pdb
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Utility\obj\Debug\ESTM.Utility.csprojResolveAssemblyReference.cache
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Utility\bin\Debug\ESTM.Common.DtoModel.dll
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Utility\bin\Debug\ESTM.Common.DtoModel.pdb
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Utility\bin\Debug\AutoMapper.dll
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Utility\bin\Debug\AutoMapper.xml
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Utility\bin\Debug\ESTM.Utility.dll.config

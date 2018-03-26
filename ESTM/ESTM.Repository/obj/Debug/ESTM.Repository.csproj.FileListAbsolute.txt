@@ -1,0 +1,12 @@
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Repository\bin\Debug\ESTM.Repository.dll
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Repository\bin\Debug\ESTM.Repository.pdb
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Repository\bin\Debug\ESTM.Domain.dll
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Repository\bin\Debug\EntityFramework.dll
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Repository\bin\Debug\ESTM.Domain.pdb
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Repository\bin\Debug\EntityFramework.xml
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Repository\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.WCF.Service\bin\Debug\ESTM.Repository.dll
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.WCF.Service\bin\Debug\ESTM.Repository.pdb
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Repository\obj\Debug\ESTM.Repository.csprojResolveAssemblyReference.cache
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Repository\obj\Debug\ESTM.Repository.dll
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Repository\obj\Debug\ESTM.Repository.pdb

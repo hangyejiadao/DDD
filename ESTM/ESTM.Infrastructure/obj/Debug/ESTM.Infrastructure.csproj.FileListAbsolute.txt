@@ -1,0 +1,5 @@
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Infrastructure\bin\Debug\ESTM.Infrastructure.dll.config
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Infrastructure\bin\Debug\ESTM.Infrastructure.dll
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Infrastructure\bin\Debug\ESTM.Infrastructure.pdb
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Infrastructure\obj\Debug\ESTM.Infrastructure.dll
+D:\Users\yangxiaojun\Projects\ESTM\ESTM.Infrastructure\obj\Debug\ESTM.Infrastructure.pdb
